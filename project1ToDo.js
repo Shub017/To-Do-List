@@ -1,24 +1,30 @@
 console.log("Script Loaded");
+
+// This is to keep track of the activity
 var count = 0;
 
-
-
 (() => {
-    // Define newevent first
+    // declaring the variables that will be used
     let isdelTrue = false;
     const taskCounter = document.getElementById("taskCounter");
     const addButton = document.getElementById("addButton");
     const containerList = document.getElementById("containerList")
 
+    
+    // function to display count of activities that are still due
     function taskRemCount(){
         taskCounter.innerText = count;
     }
 
-    // Define addNewActivity before using it in the event listener
+    // Defining addNewActivity before using it in the event listener
     const addNewActivity = () => {
-        console.log("Function Ran")
+        console.log("Function Ran, new activity included")
+
+        // Fetching the input given by user
         var newevent = document.getElementById("exampleInput");
         var inputValue = newevent.value.trim(); // Trim to remove leading and trailing spaces
+
+        // If condition will handle empty input in text field.
         if (inputValue === "") {
             console.log("Invalid Input");
         }
@@ -31,16 +37,18 @@ var count = 0;
 
             count++;
             taskRemCount();
+
+            // To display time 
             const leftText = document.createElement("div")
             leftText.className = "leftText";
             leftText.textContent = formattedTime;
 
+            // To display tasks need to be performed
             const middleText = document.createElement("div")
             middleText.className = "middleText";
             middleText.textContent = inputValue;
 
-            // Adding checkbox 
-
+            // Adding checkbox to keep track of what activites are still due and completed
             const checkbox = document.createElement("input");
             checkbox.type = "checkbox";
             checkbox.className = "checkBox";

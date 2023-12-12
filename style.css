@@ -85,9 +85,18 @@ body {
 }
 
 @media screen and (max-width: 700px) {
+
     #addButton {
-        display: none;
+        position: fixed;
+        right: 0;
+        z-index: 9999;
+        margin-right: 0%;
+        width: 50px; 
+        height: 60px;
+        
+        /* Other styles */
     }
+    
 
     #taskCount{
         display: none;
@@ -95,6 +104,9 @@ body {
 
     .inputField{
         width: 100%;
+        margin-left: 0%;
+        padding-left: 0%;
+        
     }
 }
 

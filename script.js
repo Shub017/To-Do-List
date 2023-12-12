@@ -88,8 +88,10 @@ var count = 0;
                 console.log("Delete event triggered");
                 activityContainer.addEventListener('animationend', () => {
                     activityContainer.remove();
-                    count--;
-                    taskRemCount();
+                    if (!checkbox.checked){
+                        count--;
+                        taskRemCount();
+                    }
                     isdelTrue = false;
                 });
             }
@@ -104,7 +106,7 @@ var count = 0;
             activityContainer.appendChild(rightImage);
 
             // Set the margin-top for the new activity container
-            activityContainer.style.marginTop = "30px";
+            activityContainer.style.marginTop = "50px";
             // activityContainer.style.border = "2px solid black"; 
             // activityContainer.style.borderStyle = "dotted";
 

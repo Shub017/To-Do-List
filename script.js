@@ -59,7 +59,7 @@ var count = 0;
                     count--;
                     taskRemCount();
                     const image = document.createElement("img");
-                    image.src = "G:\\Web_Page\\Skill-Test\\Images\\verified.png";
+                    image.src = "Images\\verified.png";
                     image.alt = "Activity Completed";
                     image.className = "activityDone";
                     activityContainer.appendChild(image);
@@ -76,7 +76,7 @@ var count = 0;
 
             // Creating a button to delete activity from todo list
             const rightImage = document.createElement("img");
-            rightImage.src = "G:\\Web_Page\\To-Do-list\\bin.png";
+            rightImage.src = "Images\\bin.png";
             rightImage.alt = "-";
             rightImage.className = "rightImage";
 

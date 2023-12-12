@@ -1,8 +1,10 @@
+/* Setting the background colour of body of html DOM*/
 body {
     background: rgb(159, 201, 224);
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(156,151,175,1) 100%, rgba(190,89,109,0.2389791227548692) 100%);
 }
 
+/* Where a user will enter the task that needs to be done */
 .inputField {
     font-style: italic;
     
@@ -11,6 +13,8 @@ body {
     padding: 10px; /* Add padding to give some space inside the input field */
     box-shadow: 5px 5px 10px lightblue; /* Add a box shadow with a color */
 }
+
+
 
 #exampleInput {
     font-size: 20px;
@@ -21,6 +25,7 @@ body {
     border-radius: 5px; /* Optional: Add rounded corners */
 }
 
+/* Add button that will appear to the right of our input field */
 .Addbutton{
     width: 57px; 
     height: 57px; 
@@ -69,7 +74,7 @@ body {
     cursor: pointer;    
 }
 
-
+/* This will indicate the number of task remaining */
 .displayTaskRem{
     font-style: italic;
     position: fixed;

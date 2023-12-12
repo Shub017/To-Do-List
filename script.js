@@ -76,7 +76,7 @@ var count = 0;
 
             // Creating a button to delete activity from todo list
             const rightImage = document.createElement("img");
-            rightImage.src = "Images\\bin.png";
+            rightImage.src = "Images\\icons8-bin-64.png";
             rightImage.alt = "-";
             rightImage.className = "rightImage";
 
